@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Exhibit</title>
+    <link rel="icon" href="Favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="js-calc.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="lnav">
+            <h1 class="navheading">Science Exhibition</h1>
+        </div>
+        <div class="rnav">
+            <button class="rnavlinks"><a href="">MainPage</a></button>
+            <button class="rnavlinks"><a href="">Intro</a></button>
+            <button class="rnavlinks"><a href="">Calculator</a></button>
+            <button class="rnavlinks"><a href="">Explanation</a></button>
+            <button class="rnavlinks"><a href="">Footer</a></button>
+        </div>
+
+    </nav>
+    <hr id="navbodydiv">
+    <main>
+        <section class="Main" id="page1"><br>
+            <div class="sec1main">
+                <div class="sec1mainl">
+                    <h1><span class="purple">WattWise </span><br>Electricity Calculator</h1>
+                    <br>
+                    <h2>A <span class="purple">Project</span> by<br><span id="element"></span></h2>
+                </div>
+                <hr>
+                <div class="sec1mainr"><img src="Logo.png" alt="WattWise Logo"></div>
+            </div>
+        </section>
+        <hr>
+        <section class="Main" id="page2">
+            <h1>
+                <span class="purple">WattWise Electricity Calculator</span>
+            </h1>
+            <div class="sec2main">
+                <div class="formcard">
+                    <h1>Estimate Your Electricity Bill Here</h1>
+                    <hr>
+                    <table>
+                        <tr class="row-1">
+                            <th class="appliance-name">Name Of Appliance</th>
+                            <th>Wattage/Hr</th>
+                            <th>Hours/Day</th>
+                            <th>No. of Appliances</th>
+                            <th></th>
+                        </tr>
+                        <tr class="row-2">
+                            <td class="appliance-name">LED Bulbs</td>
+                            <td class="wattage"><input type="text" name="" id="w1"></td>
+                            <td class="hrs"><input type="text" name="" id="h1"></td>
+                            <td class="no-of-appls"><input type="text" name="" id="n1"></td>
+                            <td></td>
+                        </tr>
+                        <tr class="row-3">
+                            <td class="appliance-name">Ceiling/Table Fan</td>
+                            <td class="wattage"><input type="text" name="" id="w2"></td>
+                            <td class="hrs"><input type="text" name="" id="h2"></td>
+                            <td class="no-of-appls"><input type="text" name="" id="n2"></td>
+                            <td></td>
+                        </tr>
+                        <tr class="row-4">
+                            <td class="appliance-name">Television</td>
+                            <td class="wattage"><input type="text" name="" id="w3"></td>
+                            <td class="hrs"><input type="text" name="" id="h3"></td>
+                            <td class="no-of-appls"><input type="text" name="" id="n3"></td>
+                            <td></td>
+                        </tr>
+                        <tr class="row-5">
+                            <td class="appliance-name">Air Conditioner</td>
+                            <td class="wattage"><input type="text" name="" id="w4"></td>
+                            <td class="hrs"><input type="text" name="" id="h4"></td>
+                            <td class="no-of-appls"><input type="text" name="" id="n4"></td>
+                            <td></td>
+                        </tr>
+                        <tr class="row-6">
+                            <td class="appliance-name">Computers</td>
+                            <td class="wattage"><input type="text" name="" id="w5"></td>
+                            <td class="hrs"><input type="text" name="" id="h5"></td>
+                            <td class="no-of-appls"><input type="text" name="" id="n5"></td>
+                            <td></td>
+                        </tr>
+                        <tr class="row-7">
+                            <td class="appliance-name">Room Cooler</td>
+                            <td class="wattage"><input type="text" name="" id="w6"></td>
+                            <td class="hrs"><input type="text" name="" id="h6"></td>
+                            <td class="no-of-appls"><input type="text" name="" id="n6"></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="5" style="text-align: center; padding: 10px;">
+                                <button id="calculate" onclick="calculateTotal()">Calculate Total</button>
+                            </td>
+                        </tr>
+                        <!-- Result display row -->
+                        <tr>
+                            <td colspan="5" style="text-align: center; padding: 10px;">
+                                <strong>Total Energy Consumption: <span id="result">0</span></strong>
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>
+        </section>
+        <hr>
+        <section class="Main" id="page3">
+            <h1 class="purple">The Explanation - </h1>
+            <div class="formcard">
+                <ol 
+                type="1">
+                    <li>You type in your values in the inputs</li>
+                    <li>Then the code multiplies each row's inputs</li>
+                    <li>Then all rows' worth of WattHours get added</li>
+                    <li>Then the code takes these WattHours and multiplies them one-after-the-another by the prices of Electricity in Aundh</li>
+                    <li>Then it returns the prices!</li>
+                    <li>And Simple as that!</li>
+                </ol>
+            </div>
+        </section>
+    </main>
+    <footer>
+         <div class="lfoot">
+            <h1 class="navheading">Science Exhibition</h1>
+        </div>
+        <div class="rfoot">
+              <h2>A <span class="purple">Project</span> by<br>Aryan Patil, Aryan Saxena, Tanush Ghodke, Abhigyaan Bajpai, Pratham Aloney</h2>
+        </div>
+    </footer>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Aryan Saxena', 'Tanush Ghodke', 'Aryan Patil', 'Pratham Aloney', 'Abhigyaan Bajpai'],
+            typeSpeed: 25,
+            backDelay: 1000,
+            backSpeed: 50,
+            loop: true
+        });
+    </script>
+
+</body>
+
+</html>
