@@ -221,6 +221,11 @@ main {
     font-size: 2rem;
 }
 
+.formcard {
+    width: fit-content;
+    padding: 5vw;
+}
+    
 .formcard table input {
     background: none;
     border: 2px solid black;
@@ -231,6 +236,7 @@ main {
     font-size: 20px;
     box-shadow: 0 0 10px 5px black,
         inset 0 0 5px 3px black;
+    margin: 0.7vh;
 }
 
 .formcard table input:focus {
