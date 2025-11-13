@@ -98,6 +98,22 @@ main {
     margin-bottom: 5vh;
 }
 
+.sec1mainr {
+    display: flex;
+    flex-direction: column;
+}
+
+.sec1mainr button {
+    border: none;
+    background: rgb(18, 1, 36);
+    cursor: pointer;
+    color: rgb(136, 72, 255);
+    font-size: 1.25rem;
+    border-radius: 2vw;
+    padding: 3vh;
+    box-shadow: 0 0 2vw 2vh black;
+}
+
 .sec1mainr img {
     width: 25vw;
 }
@@ -225,7 +241,7 @@ main {
     width: fit-content;
     padding: 5vw;
 }
-    
+
 .formcard table input {
     background: none;
     border: 2px solid black;
@@ -267,6 +283,11 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    align-self: center;
+    justify-self: center;
+}
+
+.github {
     align-self: center;
     justify-self: center;
 }
